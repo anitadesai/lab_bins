@@ -58,6 +58,10 @@ public class Bins {
         System.out.println();
         System.out.println("worst-fit method");
         System.out.println("number of pq used: " + pq.size());
+        
+        // small change
+        System.out.println("Team Members: Saumya, Gaurav, Anita");
+        
         while (!pq.isEmpty()) {
             System.out.println(pq.poll());
         }
