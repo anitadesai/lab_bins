@@ -1,0 +1,19 @@
+sj166 gsk6 agd19
+
+Readability
+1. They spaced the code out, adding extra lines, as well as indented which helped our understanding. However they didn't comment much which makes it difficult to read all of the code without any breaks.
+2. Commenting what each individual part in the algorithm, such as before some loops, would have been helpful.
+3. There are parts of the main method that could have been written as helper methods that would convey the specific goal of a section of code well, and then be implemented in the main method to show the flow of steps required in the algorithm. This would make the code more concise and clear.
+
+Testability
+1. The code would be more testable with helper methods that could be checked with unit tests, however as is you could use the eclipse debugger or print statements in the loops at the moment.
+2. Good test cases would include several different lists of file sizes with varied numbers of files. An example could be the five given in the page, "700,000   200,000   800,000   100,000   150,000" plus another case that adds a few smaller files and a few bigger files. Additionally, edge cases should be used such as one file that is too large for a disk or files of size 0.
+3. As stated before, taking the algoritms for worst fit and worst fit decreasing and separating them into functions would be helpful.
+4. Breaking the two algorithms up could allow for better debugging of one method as well as comparison of the two functions separately. One could run the algorithms separately with different test cases if this were done.
+
+Extensibility
+1. Bloaters (main method is too long)
+2. The code never differentiates between the specific algorithms used, as a result it doesn't give any suggestions about extending it. The implication would be that the next algorithm could be written directly in the main method, as that was how the others were treated, however that is not really a sustainable way to extend.
+3. Everything relies on the disk class as well as the reading helper method and the parameter of the disk file.
+4. The dependencies were easy to find, as the helper method was written for scanning and the disk class was separate.
+5. If anything, when the Disk object is implemented there could be a comment referring to the separate class as a reminder of where that came from, otherwise there aren't really any significant changes to be made.
